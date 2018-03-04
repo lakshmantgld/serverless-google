@@ -1,0 +1,1 @@
+'use strict';Object.defineProperty(exports,'__esModule',{value:!0});var http=(a,b)=>{b.status(200).send('Hello World!')},event=(a,b)=>{b()},src={http:http,event:event};exports.default=src,exports.http=http,exports.event=event;

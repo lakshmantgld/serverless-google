@@ -2,13 +2,21 @@
   "name": "google-nodejs",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodify dev",
+    "build": "nodify build",
+    "start": "npm run build && node ./build/main"
   },
-  "author": "serverless.com",
+  "author": "Lakshman Diwaakar(lakshmantgld.github.io)",
   "license": "MIT",
   "dependencies": {
     "serverless-google-cloudfunctions": "^1.1.1"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "nodify-core": "^4.0.5",
+    "rollup-plugin-babel-minify": "^3.1.2",
+    "rollup-plugin-node-resolve": "^3.0.0"
   }
 }
