@@ -2,11 +2,12 @@
   "name": "google-nodejs",
   "version": "0.1.0",
   "description": "",
-  "main": "build/main.js",
+  "main": "build/dist.js",
   "scripts": {
     "dev": "nodify dev",
     "build": "nodify build",
-    "start": "npm run build && node ./build/main"
+    "start": "npm run build && node ./build/main",
+    "deploy": "nodify build && sls deploy -vvvv"
   },
   "author": "Lakshman Diwaakar(lakshmantgld.github.io)",
   "license": "MIT",

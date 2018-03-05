@@ -16,7 +16,8 @@ package:
   exclude:
     - "**"
   include:
-    - build/main.js
+    - package.json
+    - build/dist.js
 
 functions:
   first:
